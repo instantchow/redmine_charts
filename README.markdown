@@ -8,7 +8,7 @@ Plugin which integrates with Redmine following charts: burndown, timeline, ratio
 Download the sources and put them to your vendor/plugins folder.
 
     $ cd {REDMINE_ROOT}
-    $ git clone git://github.com/mszczytowski/redmine_charts.git vendor/plugins/redmine_charts
+    $ git clone git://github.com/chrischow/redmine_charts.git vendor/plugins/redmine_charts
 
 Install OpenFlashChart plugin. 
 
@@ -22,8 +22,13 @@ Populate tables with old data.
 
     $ rake charts:migrate RAILS_ENV=production
 
-Run Redmine and have a fun!
-
+Run Redmine and enable permissions for chart
+    
+    http://redmine.vdl.local/roles/report
+       
+    click the appropriate check boxes
+    
+    
 ## Troubleshouting
 
 ### I don't see any data in charts / I don't see my old data in charts
